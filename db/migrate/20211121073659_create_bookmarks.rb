@@ -4,7 +4,7 @@ class CreateBookmarks < ActiveRecord::Migration[6.0]
       t.string :comment
       t.references :movie, null: false, foreign_key: true
       t.references :list, null: false, foreign_key: true
-      validates :comment, length: { minimum: 6 }
+
       t.timestamps
     end
   end
